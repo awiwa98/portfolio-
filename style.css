@@ -31,9 +31,7 @@ body {
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
-  padding-right: 0.3rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0.3rem 1rem 0;
   background-color: var(--background-color1);
 }
 
