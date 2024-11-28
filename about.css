@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root {
+    --background-color1: #fbfbfb;
+    --background-color2: #e4dcf7;
+    --background-color3: #f2f0f0;
+    --text-color1: #333;
+    --text-color2: #5f3ea7;
+    --text-color3: #fbfbfb;
+    --text-color4: #e2d8f9;
+  }
+  
+  body,
+  html {
+    box-sizing: border-box;
+  }
+  
+   /* about-me section */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color1);
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .about-me img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 600px) {
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      width: 85%;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .about-me {
+      align-items: center;
+      width: 80%;
+      padding: 0;
+    }
+  }
+  
