@@ -136,7 +136,7 @@ main {
   box-shadow: 4px 4px 6px rgba(145, 144, 144, 0.5);
   flex: 1 1 360px;
   width: 100%;
-  min-width: 380px;
+  min-width: 360px;
   margin-bottom: 0.8rem;
   overflow: hidden;
 }
