@@ -98,7 +98,23 @@ main {
   text-align: start;
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
+  transform: translateX(-100%); /* Start utanför skärmen till vänster */
+  opacity: 0; /* Gör elementet osynligt initialt */
+  animation: slideIn 1s ease-out forwards; /* Animation */
+  
 }
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
 
 .text-container p {
   text-align: start;
@@ -106,6 +122,20 @@ main {
   font-weight: 550;
   line-height: 125%;
   color: var(--text-color2);
+  transform: translateX(-100%); /* Start utanför skärmen till vänster */
+  opacity: 0; /* Gör elementet osynligt initialt */
+  animation: slideIn 1.2s ease-out forwards; /* Animation */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
 
 /* Project Section */
@@ -279,7 +309,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--background-color1);
+  background: linear-gradient(to bottom, #fbfbfb, #e9e6e6);
 }
 
 /* Hamburger menu */
